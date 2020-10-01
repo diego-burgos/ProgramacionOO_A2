@@ -1,5 +1,7 @@
 package entidades;
 
+import java.util.Date;
+
 public class Alumnos {
     
     private int id;
@@ -74,5 +76,8 @@ public class Alumnos {
     public void setDni(int dni) {
         this.dni = dni;
     }
+
+   
+
     
 }
