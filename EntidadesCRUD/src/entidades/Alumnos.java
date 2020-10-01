@@ -3,6 +3,10 @@ package entidades;
 import java.util.Date;
 
 public class Alumnos {
+
+    public static int getID() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     private int id;
     private String nombre;

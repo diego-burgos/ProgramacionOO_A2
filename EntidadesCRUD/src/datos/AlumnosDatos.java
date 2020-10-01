@@ -3,6 +3,7 @@ package datos;
 import entidades.Alumnos;
 import java.util.ArrayList;
 import java.util.List;
+import entidadescrud.EntidadesCRUD;
 
 public class AlumnosDatos {
     
@@ -45,12 +46,18 @@ public class AlumnosDatos {
         this.dni = dni;
         
     }
-    public void update(int id, String name, int age) {
-        for (Alumnos person: AlumnosDatos) {
-            if (person.getId() == id) {
-                System.out.println("Se actualizo");
-            }else {
-                System.out.println("No se actualizo correctamente");
+    public void update(int id, String Nombre, String APpaterno, String APmaterno, int FechaNac, String Direccion, String Correo, int dni) {
+        for (Alumnos Alumnos: AlumnosDatos) {
+            if (Alumnos.getID() == id) {
+                Alumnos d = new Alumnos();
+                d.setNombre(Nombre);
+                d.setAPpaterno(APpaterno);
+                d.setAPmaterno(APmaterno);
+                d.setFechaNac(FechaNac);
+                d.setDireccion(Direccion);
+                d.setCorreo(Correo);
+                d.setDni(dni);
+                System.out.print("Se Actualizo Correctamente");
             }
         }
     }
